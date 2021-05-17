@@ -26,5 +26,5 @@ let arrOfString = testString.split(' ');
 let resultString = arrOfString.filter(item => item.length > 4 );
 console.log(resultString.length);
 //8
-let secondTestString = '123456 888888 123 10 21 6543221534';
-console.log(secondTestString.match(/\b\d{6}\b/gmi)); 
+let secondTestString = 'asfsad123123456asd 888888 123 10 21 6543221534';
+console.log(secondTestString.match(/(?<!\d)\d{6}(?!\d)/gmi)); 
