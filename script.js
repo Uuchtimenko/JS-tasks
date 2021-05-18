@@ -1,5 +1,5 @@
-const testArray = [1,3,0,5,7,-8,32,5,32,-16,7,5,3];
 //1
+const testArray = [1,3,0,5,7,-8,32,5,32,-16,7,5,3];
 const sqrArray = [];
 testArray.forEach(function(item){
     sqrArray.push(item*item);
@@ -22,9 +22,9 @@ const subArray = secondTestArray.filter(item => Array.isArray(item));
 console.log(subArray);
 //7
 const testString = 'asd rffvg asef asdasfasdf as';
-let arrOfString = testString.split(' ');
-let resultString = arrOfString.filter(item => item.length > 4 );
+const arrOfString = testString.split(' ');
+const resultString = arrOfString.filter(item => item.length > 4 );
 console.log(resultString.length);
 //8
-let secondTestString = 'asfsad123123456asd 888888 123 10 21 6543221534';
+const secondTestString = 'asfsad123123456asd 888888 123 10 21 6543221534';
 console.log(secondTestString.match(/(?<!\d)\d{6}(?!\d)/gmi)); 
